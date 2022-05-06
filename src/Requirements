@@ -1,0 +1,21 @@
+Requirements:
+1. User should be able to create an account.
+2. User should be able to add an expense.
+3. User can pay for others and the amount should be splitted among its friends.
+4. Splitting can be
+    Equally -> Validation: Sum should be equal to the total amount
+            -> Decimal issue like 100/3 = 33.33333
+
+    Unequally ->
+            > Exact amount - Sum should be equal to the total amount
+            > Percentage - Sum of individual percentage should be equal to 100.
+            > Decimal issue
+5. User should be able to his past expenses.
+6. User should be able to see his balances.
+7. User can settle the expense with a friend.
+---------------------------------------------------
+1. User can create a group and add friends in it.2. Expenses can be either of a group or individual.
+
+
+--Expense - amount, addedby, paidby, datetime, List<users> to be splitted, description
+
