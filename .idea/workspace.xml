@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45f45dad-deab-4a9d-a189-159d44ad9b6c" name="Changes" comment="FirstCommit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/EqualExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/ExactAmountExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/PercentageExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/split/EqualSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/split/ExactAmountSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/split/PercentSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/split/Split.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/util/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+    <list default="true" id="45f45dad-deab-4a9d-a189-159d44ad9b6c" name="Changes" comment="Splitwise commit">
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/controller/ExpenseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/ExpenseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/repository/BookKeeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/repository/ExpenseRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/repository/IExpenseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/repository/IUserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/repository/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/services/IPaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/services/ISplitStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/services/OnePayIPaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/services/PercentageSplitStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requirements" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/expense/EqualExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/EqualExpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/expense/ExactAmountExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/ExactAmountExpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/expense/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/expense/PercentageExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/model/expense/PercentageExpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/split/EqualSplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/split/ExactAmountSplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/split/PercentSplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/model/split/Split.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
@@ -81,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651847666991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Splitwise skeleton">
+      <created>1651864251645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651864251645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FirstCommit" />
+    <MESSAGE value="Splitwise skeleton" />
+    <MESSAGE value="Splitwise commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splitwise commit" />
   </component>
 </project>
